@@ -36,25 +36,7 @@
 <?php
 require_once 'connection.php';
 
-/* function conectarBD()
-{
-    $cadena_conexion = 'mysql:dbname=nombre_de_tu_base_de_datos;host=localhost';
-    $usuario = 'tu_usuario';
-    $clave = 'tu_contraseña';
-
-    try {
-        $pdo = new PDO($cadena_conexion, $usuario, $clave);
-        return $pdo;
-    } catch (PDOException $e) {
-        echo 'Error al conectar con la BD: ' . $e->getMessage();
-        return null;
-    }
-} */
-
- $conexion = conectarBD();
- 
-
-/*  $conexion = require_once 'connection.php'; */
+ $conexion = conectarBD(); 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
